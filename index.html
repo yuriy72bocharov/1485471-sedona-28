@@ -7,31 +7,30 @@
   <body>
   
   <header>
-		<nav>
+		<nav >
 			<ul>
 				<li><a href="blanc.html">информация</a></li>
-				<li><a href="">фото и видео</a></li>
-				<li><a href="">карта штата</a></li>
+				<li><a href="blanc.html">фото и видео</a></li>
+				<li><a href="blanc.html">карта штата</a></li>
 				<li><a href="hotels.html">гостиницы</a></li>
 			</ul>
 		</nav>
-		
+		<a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
 	
 	</header>
-		<section>
-		<img src="img/logo.png" alt="Логотип Sedona">
-		<!-- здесь блок с  надписью sedona и остальными на инглиш-->
-		</section>
+		
 	<main>
-		<h1 hidden>Добро пожаловать в Седону</h1> <!-- далее будет невидимый --> 
-		<img src="img/welcome.svg" alt="Welcome to Sedona">
+		<section>
+			<h1 class="visually-hidden">Добро пожаловать в Седону</h1> 
+			<img src="img/welcome.svg" width="456" height="350" alt="Welcome to Sedona">
+		</section>	
 		<section>
 			<article>седона - небольшой городок в аризоне,<br> заслуживающий большего! </article>
 			<h2>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
 	
 		</section>
 		<section>
-		<h2>причины отдохнуть в седоне</h2> <!-- далее невидимый -->
+		<h2 class="visually-hidden">причины отдохнуть в седоне</h2>
 			<ul>
 				<li>
 					<h3>настоящий городок</h3>
@@ -41,17 +40,17 @@
 					<ul>
 						<li>
 							<h3>жилье</h3>
-							<img src="img/iconhome.png" alt="жилье">
+							<img src="img/iconhome.png" width="75" height="72" alt="жилье">
 							<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</li>
 						<li>
 							<h3>еда</h3>
-							<img src="img/iconfood.png" alt="еда">
+							<img src="img/iconfood.png" width="75" height="70" alt="еда">
 							<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
 						<li>
 							<h3>сувениры</h3>
-							<img src="img/icongift.png" alt="сувениры">
+							<img src="img/icongift.png" width="64" height="77" alt="сувениры">
 							<p>не только китайского, но и местного производства!</p>
 						</li>
 					</ul>
@@ -89,37 +88,47 @@
 		</section>
 		<section>
 			<h2>поиск гостиницы в седоне</h2>
-			<p>дата заезда:</p>
-			<!-- здесь будет выбор даты-->
-			<p>дата выезда:</p>
-			<!-- здесь будет выбор даты-->
-			<p>взрослые:</p>
+		<form action="https://echo.htmlacademy.ru" method="get">	
+			<label>дата заезда: 
+				<input type="text" name="datain" placeholder="24 апреля 2017">
+			</label>
+			<label>дата выезда: 
+				<input type="text" name="dataof" placeholder="4 июля 2017">
+			</label>
+			<label>взрослые: 
+				<input type="text" name="adults" placeholder="2">
+			</label>
+						</label>
+			<label>дети: 
+				<input type="text" name="child" placeholder="0">
+			</label>
 			<!-- здесь будет выбор кол-ва взрослых -->
 			<p>дети:</p>
 			<!-- здесь будет выбор кол-ва детей-->
 			<button type="submit">найти</button>
 		</section>
+		</form>
 		<section>
-		<img src="img/map.png" alt="карта седоны">
+		<img src="img/map.png" width="1199" height="594" alt="карта седоны">
 		</section>
 			
 	</main>
 		
 	<footer>
 		<section>
-		<h2>наши контакты</h2> <!--далее невидимый-->
+		<h2 class="visually-hidden">наши контакты</h2> 
 		<p>#visitsedona<br>Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a> </p>
 		</section>
 		<section>
-		<h2>Мы в соцсетях</h2> <!--далее невидимый-->
+		<h2 class="visually-hidden">Мы в соцсетях</h2> 
 			<ul>
-				<li><a href="#"><img src="img/twitter.svg" alt="Ссылка на страницу witter"></a></li>
-				<li><a href="#"><img src="img/fbicon.svg" alt="Ссылка на страницу facebook"></a></li>
-				<li><a href="#"><img src="img/youtube.svg" alt="Ссылка на канал Youtudt"></a></li>
+				<li><a href="blanc.html"><img src="img/twitter.svg" width="17" height="15" alt="Ссылка на страницу witter"></a></li>
+				<li><a href="blanc.html"><img src="img/fbicon.svg" width="12" height="22" alt="Ссылка на страницу facebook"></a></li>
+				<li><a href="blanc.html"><img src="img/youtube.svg" width="20" height="16" alt="Ссылка на канал Youtudt"></a></li>
 			</ul>	
 		</section>
 		<section>
-		<a href="https://htmlacademy.ru"><img src="img/logohtml.png" alt="Логотип Академии HTML"></a>
+		<a href="https://htmlacademy.ru"><img src="img/logohtml.png" width="114" height="40" alt="Логотип Академии HTML"></a>
 		</section>
 
 	
