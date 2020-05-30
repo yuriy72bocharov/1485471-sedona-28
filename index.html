@@ -88,26 +88,31 @@
 		</section>
 		<section>
 			<h2>поиск гостиницы в седоне</h2>
-		<form action="https://echo.htmlacademy.ru" method="get">	
+		<form action="https://echo.htmlacademy.ru" method="get">	<!--get - для возможности сохранить результат выбора-->
 			<label>дата заезда: 
 				<input type="text" name="datain" placeholder="24 апреля 2017">
+				<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты заезда"></button>
 			</label>
 			<label>дата выезда: 
 				<input type="text" name="dataof" placeholder="4 июля 2017">
+				<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты выезда"></button>
 			</label>
 			<label>взрослые: 
+				<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество"></button>
 				<input type="text" name="adults" placeholder="2">
+				<button type="button"><img src="img/union.svg" width="11" height="11" alt="уменьшить количество"></button>
 			</label>
 						</label>
 			<label>дети: 
+				<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="увеличить количество"></button>
 				<input type="text" name="child" placeholder="0">
+				<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество"></button>
 			</label>
-			<!-- здесь будет выбор кол-ва взрослых -->
-			<p>дети:</p>
-			<!-- здесь будет выбор кол-ва детей-->
+
 			<button type="submit">найти</button>
 		</section>
 		</form>
+		<!--сверстано формой по следующей логике: данные из формы отправлябтся на обработку, после чего на карту ( или списком)выводятся отели готовые в указанные даты принять указанное кол-во человек-->
 		<section>
 		<img src="img/map.png" width="1199" height="594" alt="карта седоны">
 		</section>
