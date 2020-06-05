@@ -3,41 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   
-  <header>
-		<nav >
-			<ul>
+  <header class="main-header">
+		<nav class="main-navigation">
+			<ul class="site-navigation">
 				<li><a href="blanc.html">информация</a></li>
 				<li><a href="blanc.html">фото и видео</a></li>
 				<li><a href="blanc.html">карта штата</a></li>
 				<li><a href="hotels.html">гостиницы</a></li>
-			</ul>
+			</ul>	
 		</nav>
 		<a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
-	
 	</header>
 		
 	<main>
-		<section>
+		<section class="background-slogan">
 			<h1 class="visually-hidden">Добро пожаловать в Седону</h1> 
 			<img src="img/welcome.svg" width="456" height="350" alt="Welcome to Sedona">
 		</section>	
-		<section>
-			<article>седона - небольшой городок в аризоне,<br> заслуживающий большего! </article>
+		<section aria-label="достоинства седоны" class="slogan">
+			<article aria-label="слоган города">седона - небольшой городок в аризоне,<br> заслуживающий большего! </article>
 			<h2>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
 	
 		</section>
-		<section>
-		<h2 class="visually-hidden">причины отдохнуть в седоне</h2>
-			<ul>
-				<li>
+		<section class="reason-rest">
+			<h2 class="visually-hidden">причины отдохнуть в седоне</h2>
+			<ul class="reason-list">
+				<li class="reason-img">
 					<h3>настоящий городок</h3>
 					<p>- №1 -</p>
-				  
 					<p>седона - не аттракцион для туристов, там течет настоящая жизнь</p>
-					<ul>
+					<img src="img/vid.jpg" alt="вид города" width="800" height="256">
+					<ul class="reason-city">
 						<li>
 							<h3>жилье</h3>
 							<img src="img/iconhome.png" width="75" height="72" alt="жилье">
@@ -56,23 +58,24 @@
 					</ul>
 					
 				</li>
-				<li>
+				<li class="reason-img">
 					<h3>там есть мост дьявола</h3>
 					<p>- №2 -</p>
 					<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+					<img src="img/canyon.jpg" alt="фото каньона" width="800" height="256">
 					
 				</li>
-				<li>
+				<li class="reason-plase">
 					<h3>небольшая площадь</h3>
 					<p>- №3 -</p>
 					<p>все достопримечательности находятся близко</p>
 				</li>
-				<li>
+				<li class="reason-plase">
 					<h3>красивая дорога</h3>
 					<p>- №4 -</p>
 					<p>ехать в седону из лас-вегаса совсем не скучно!</p>
 				</li>
-				<li>
+				<li class="reason-plase">
 				<h3>мало туристов</h3>
 					<p>- №5 -</p>
 					<p>большинство едет в гранд каньон и толпится там</p>
@@ -81,63 +84,68 @@
 			</ul>
 			
 		</section>	
-		<section>
+		<section class="interest">
 			<h2>заинтересовались?</h2>
-				<p>укажите предпологаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p>укажите предпологаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				
 		</section>
-		<section>
-			<h2>поиск гостиницы в седоне</h2>
-		<form action="https://echo.htmlacademy.ru" method="get">	<!--get - для возможности сохранить результат выбора-->
-			<label>дата заезда: 
-				<input type="text" name="datain" placeholder="24 апреля 2017">
-				<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты заезда"></button>
-			</label>
-			<label>дата выезда: 
-				<input type="text" name="dataof" placeholder="4 июля 2017">
-				<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты выезда"></button>
-			</label>
-			<label>взрослые: 
-				<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество"></button>
-				<input type="text" name="adults" placeholder="2">
-				<button type="button"><img src="img/union.svg" width="11" height="11" alt="уменьшить количество"></button>
-			</label>
-						</label>
-			<label>дети: 
-				<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="увеличить количество"></button>
-				<input type="text" name="child" placeholder="0">
-				<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество"></button>
-			</label>
+		<section class="search-form">
+			<h2 class="search-form-label">поиск гостиницы в седоне</h2>
+			<form  class="form-data" action="https://echo.htmlacademy.ru" method="get">	<!--get - для возможности сохранить результат выбора-->
+				<label>дата заезда: 
+					<input type="text" name="datain" placeholder="24 апреля 2017">
+				</label>
+					<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты заезда"></button>
+			
+				<label>дата выезда: 
+					<input type="text" name="dataof" placeholder="4 июля 2017">
+				</label>
+					<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты выезда"></button>
+			
+				<label for="adults">взрослые: </label>
+					<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество взрослых отдыхающих"></button>
+					<input type="text" id="adults" name="adults" placeholder="2">
+					<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество взрослых отдыхающих"></button>
+			
+						
+				<label for="child">дети:</label> 
+					<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество отдыхающих детей"></button>
+					<input type="text" name="child" id="child" placeholder="0">
+					<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество отдыхающих детей"></button>
+			
 
-			<button type="submit">найти</button>
+				<button class="button-search" type="submit">найти</button>
+			</form>	
 		</section>
-		</form>
+	
 		<!--сверстано формой по следующей логике: данные из формы отправлябтся на обработку, после чего на карту ( или списком)выводятся отели готовые в указанные даты принять указанное кол-во человек   -->
-		<section>
+		<section aria-label="Карта Седоны и окрестностей">
 		<img src="img/map.png" width="1199" height="594" alt="карта седоны">
 		</section>
 			
 	</main>
 		
-	<footer>
-		<section>
+	<footer class="footer">
+		<section class="footer-contact">
 		<h2 class="visually-hidden">наши контакты</h2> 
 		<p>#visitsedona<br>Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a> </p>
 		</section>
-		<section>
+		<section class="footer-list">
 		<h2 class="visually-hidden">Мы в соцсетях</h2> 
-			<ul>
-				<li><a href="blanc.html"><img src="img/twitter.svg" width="17" height="15" alt="Ссылка на страницу witter"></a></li>
-				<li><a href="blanc.html"><img src="img/fbicon.svg" width="12" height="22" alt="Ссылка на страницу facebook"></a></li>
-				<li><a href="blanc.html"><img src="img/youtube.svg" width="20" height="16" alt="Ссылка на канал Youtudt"></a></li>
+			<ul class="footer-list-link">
+				<li><a href="blanc.html"><img src="img/twitter.svg" width="46" height="48" alt="Ссылка на страницу witter"></a></li>
+				<li><a href="blanc.html"><img src="img/fbicon.svg" width="46" height="48" alt="Ссылка на страницу facebook"></a></li>
+				<li><a href="blanc.html"><img src="img/youtube.svg" width="46" height="48" alt="Ссылка на канал Youtudt"></a></li>
 			</ul>	
 		</section>
-		<section>
+		<section class="footer-log" aria-label="ссылка на сайт HTML академии">
+		<p class="log-name">website by</p>
 		<a href="https://htmlacademy.ru"><img src="img/logohtml.png" width="114" height="40" alt="Логотип Академии HTML"></a>
 		</section>
 
 	
 	</footer>
+	
 	
 	
 	
