@@ -17,6 +17,9 @@
 	--fon-img-second: #8ac3eb;
 	--fon-rating:#F2F2F2;
 	--text-riting:#666666;
+	--triangle: #CACACA;
+	--triangle-hover:#000000;
+	--triangle-active:#81B3D2;
 }
 
 body {
@@ -30,7 +33,56 @@ body {
 	color: var(--basic-text);
 	text-transform: uppercase;
 	background-color: var(--basic-white);	
+	
 }
+
+/*главное меню*/
+
+.main-header {
+	display: flex;
+}
+a.main-header {
+	justify-content: center;
+}
+
+.main-navigation {
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	height: 56px;
+outline: red 1px solid;
+
+
+}
+
+.site-navigation {
+	display: flex;
+	margin-top: 0px;
+		
+}
+.list-item {
+	margin-top: 15px;
+	margin-bottom:auto;
+}
+.list-item:nth-child(1) {
+	margin-left: 72px;
+}
+.list-item:nth-child(2) {
+	margin-left: 134px;
+}
+.list-item:nth-child(3) {
+	margin-left: 418px;
+}
+.list-item:nth-child(4) {
+	margin-left: 147px;
+}
+
+
+
+/*logo city*/
+
+
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -62,19 +114,25 @@ img {
 }
 
 /*активация главного меню:*/
-.site-navigation a:focus,
- .site-navigation a:hover  {
+.list-item a:focus,
+ .list-item a:hover  {
 	color: var(--basic-blue);
 }
-.site-navigation a:active {
+.list-item a:active {
 	color: var(--focus-brown);
 	opacity: 0.3;
 }
 
 
+
+
+/*слоган*/
+
 .background-slogan {
 	background-color: var(--fon-img);
 	text-align: center;
+	background-image: url("../img/bac_sedona.jpg");
+	background-size: content;
 
 	
 }
@@ -259,6 +317,7 @@ display: inline;
 	border-color: var(--basic-white);
 }
 
+/*сортировка гостиниц*/
 .result-poz {
 	font-size:21px;
 	line-height:26px;
@@ -271,24 +330,70 @@ display: inline;
 	font-weight:400;
 	color: var(--basic-blask);
 }
-.sort-result, .sort-up-down {
+.sort-result {
 	list-style: none;
 	
-	
+
 }	
-/*начало выравнивания в линию блока*/
-.sort-result li, .sort-up-down li {
+/*выбор в линию*/
+
+.sort-result-item {
 	display: inline;
 }
-/*завершение выравнивания, убрать */
+
+.up-down li 	{
+
+	display: inline;
+	list-style: none;
+	
+}
+
+
+
+/*треугольники и их варианты*/
+
+.up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid var(--triangle);
+}
+
+.down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid var(--triangle);
+}
+
 .sort-result a {
 	text-decoration: none;
 	font-size:12px;
 	line-height:18px;
 	font-weight:400;
 	color: var(--basic-blask);
-	
+	border-bottom: 1px dashed var(--basic-blue);
+	opacity: 0.3;
 }
+
+	
+/*сортировка смена стилей*/
+.sort-result-item a:hover {
+	color: var(--basic-blue);
+	opacity: 1;
+	border-bottom: 1px dashed var(--basic-blue);
+}
+ .sort-result-item a:active {
+	 
+	color: var(--basic-blask);
+	opacity: 1;
+	border: none;
+}
+
+
+
 .hotel-demo {
 	background-color: var(--basic-white);
 }
