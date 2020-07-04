@@ -18,10 +18,10 @@
 				<li class="list-item"><a href="hotels.html">гостиницы</a></li>
 			</ul>	
 		</nav>
-		<a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
+		<a class="logo-sedona" href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
 	</header>
 		
-	<main>
+	<main class="main-content">
 		<section class="background-slogan">
 			<h1 class="visually-hidden">Добро пожаловать в Седону</h1> 
 			<img src="img/welcome.svg" width="456" height="350" alt="Welcome to Sedona">
@@ -34,48 +34,53 @@
 		<section class="reason-rest">
 			<h2 class="visually-hidden">причины отдохнуть в седоне</h2>
 			<ul class="reason-list">
-				<li class="reason-img">
+				<li class="reason-first-type">
+					<div class="reason-img">
 					<h3>настоящий городок</h3>
 					<p>- №1 -</p>
 					<p>седона - не аттракцион для туристов, там течет настоящая жизнь</p>
+					</div>
 					<img src="img/vid.jpg" alt="вид города" width="800" height="256">
-					<ul class="reason-city">
+					<ul class="option-reason-city">
 						<li class="list-reason-city">
-							<h3>жилье</h3>
 							<img src="img/iconhome.png" width="75" height="72" alt="жилье">
-							<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							<h3>жилье</h3>
+							<p>рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
 						</li>
 						<li class="list-reason-city">
-							<h3>еда</h3>
 							<img src="img/iconfood.png" width="75" height="70" alt="еда">
-							<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							<h3>еда</h3>
+							<p>всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
 						</li>
 						<li class="list-reason-city">
-							<h3>сувениры</h3>
 							<img src="img/icongift.png" width="64" height="77" alt="сувениры">
-							<p>не только китайского, но и местного производства!</p>
+							<h3>сувениры</h3>
+							<p>не только китайского, но и местного <br> производства!</p>
 						</li>
 					</ul>
-					
 				</li>
-				<li class="reason-img">
+				
+				
+				<li class="reason-first-type">
+					<div class="reason-img img-position">
 					<h3>там есть мост дьявола</h3>
 					<p>- №2 -</p>
 					<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+					</div>
 					<img src="img/canyon.jpg" alt="фото каньона" width="800" height="256">
 					
 				</li>
-				<li class="reason-plase">
+				<li class="reason-img other-reason">
 					<h3>небольшая площадь</h3>
 					<p>- №3 -</p>
 					<p>все достопримечательности находятся близко</p>
 				</li>
-				<li class="reason-plase">
+				<li class="reason-img other-reason">
 					<h3>красивая дорога</h3>
 					<p>- №4 -</p>
 					<p>ехать в седону из лас-вегаса совсем не скучно!</p>
 				</li>
-				<li class="reason-plase">
+				<li class="reason-img other-reason">
 				<h3>мало туристов</h3>
 					<p>- №5 -</p>
 					<p>большинство едет в гранд каньон и толпится там</p>
@@ -89,32 +94,41 @@
 			<p>укажите предпологаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				
 		</section>
+		
+		
+		<div class="button-center">
+		<h2 class="visually-hidden">поиск гостиницы в седоне</h2>
+		<button type="button" class="button-request" name="button-request">поиск гостиницы в седоне
+		</button>
+		</div>
+		
 		<section class="search-form">
-			<h2 class="search-form-label">поиск гостиницы в седоне</h2>
 			<form  class="form-data" action="https://echo.htmlacademy.ru" method="get">	<!--get - для возможности сохранить результат выбора-->
-				<label>дата заезда: 
-					<input type="text" name="datain" placeholder="24 апреля 2017">
+				<div class="time-in">
+				<label class="label-data">дата заезда: 
+					<input class="input-data" type="text" name="datain" placeholder="24 апреля 2017">
 				</label>
-					<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты заезда"></button>
-			
-				<label>дата выезда: 
-					<input type="text" name="dataof" placeholder="4 июля 2017">
+				 <button class="button-speech" type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты заезда"></button> 
+				</div>	
+				<div class="time-in">	
+				<label class="label-data">дата выезда: 
+					<input class="input-data" type="text" name="dataof" placeholder="4 июля 2017">
 				</label>
-					<button type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты выезда"></button>
-			
-				<label for="adults">взрослые: </label>
-					<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество взрослых отдыхающих"></button>
-					<input type="text" id="adults" name="adults" placeholder="2">
-					<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество взрослых отдыхающих"></button>
-			
+					<button class="button-speech" type="button"><img src="img/calendar.svg" width="21" height="23" alt="выбор даты выезда"></button>
+				</div>
+				<div class="rr">
+				<label class="sd" for="adults">взрослые: </label>
+					<button  type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество взрослых отдыхающих"></button>
+					<input class="zx" type="text" id="adults" name="adults" placeholder="2">
+					<button  type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество взрослых отдыхающих"></button>
 						
-				<label for="child">дети:</label> 
-					<button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество отдыхающих детей"></button>
-					<input type="text" name="child" id="child" placeholder="0">
-					<button type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество отдыхающих детей"></button>
-			
+				<label class="cv" for="child">дети:</label> 
+					<button class="zxc" type="button"><img src="img/rectangle.svg" width="12" height="3" alt="уменьшить количество отдыхающих детей"></button>
+					<input class="zx" type="text" name="child" id="child" placeholder="0">
+					<button  type="button"><img src="img/union.svg" width="11" height="11" alt="увеличить количество отдыхающих детей"></button>
+				</div>
 
-				<button class="button-search" type="submit">найти</button>
+				<button class="button-search-hotel" type="submit">найти</button>
 			</form>	
 		</section>
 	
